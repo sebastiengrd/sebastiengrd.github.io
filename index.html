@@ -1,1 +1,161 @@
-Hello world
+<!DOCTYPE html>
+<html>
+<title>Sébastien Girard - Site Web Personnel</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="/home/sebastien/Pictures/IiQf5H.png" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2>Sébastien Girard</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><a href="https://www.google.com/maps/place/Gatineau,+QC/" target="_blank"><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Gatineau, Québec, Canada</p></a>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>sebastiengrd@gmail.com</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>sgira005@uottawa.ca</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>819-351-1687</p>
+          <hr>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Langues</b></p>
+
+          <dl>
+            <dt>Francais</dt>
+              <dd>- Langue maternelle</dd>
+            <dt>Anglais</dt>
+              <dd>- Parlé et écrit</dd>
+            </dt>
+          </dl>
+          <hr>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-rocket fa-fw w3-margin-right w3-text-teal"></i>Centres d’intérêts et loisirs</b></p>
+          <ul>
+            <li>Impression 3D</li>
+            <li>Électronique</li>
+            <li>Programmation</li>
+            <li>Sécurité informatique</li>
+            <li>Aviation</li>
+            <li>Modélisme</li>
+            <li>Piano</li>
+            <li>Course à pied</li>
+          </ul>
+
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-left-align"><h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Études et formations</h2></button>
+        <div id="Demo1" class="w3-container w3-hide">
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Secondaire 5 mathématique sn, physique, chimie et anglais avancé</b></h5>
+            <p>Polyvalente de l'Érablière, Gatineau</p>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - <span class="w3-tag w3-teal w3-round">En cours</span></h6>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Piano, niveau préparatoire 14 et formation musicale et auditive int. 2 (202)</b></h5>
+            <p>Conservatoire de musique de Gatineau</p>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - <span class="w3-tag w3-teal w3-round">En cours</span></h6>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Secourisme d’urgence avec RCR « A » et DEA</b></h5>
+            <p>Ambulance St-Jean, Gatineau</p>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016</h6>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Certificat restreint d'opérateur radio (compétence aéronautique)</b></h5>
+            <p>Centre d’entraînement des cadets de Bagotville</p>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>juillet 2016</h6>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Cours d’instruction générale 2 semaines et Cours d’aviation avancé 3 semaines</b></h5>
+            <p>Centre d’entraînement des cadets de Bagotville</p>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>juillet 2015/2016</h6>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <script>
+        function myFunction(id) {
+          var x = document.getElementById(id);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+            x.previousElementSibling.className = 
+            x.previousElementSibling.className.replace("w3-black", "w3-red");
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+            x.previousElementSibling.className = 
+            x.previousElementSibling.className.replace("w3-red", "w3-black");
+          }
+        }
+        </script>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
+          <p>Web Development! All I need to know in one place</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>London Business School</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
+          <p>Master Degree</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>School of Coding</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
+          <p>Bachelor Degree</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+</body>
+</html>
